@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Heart_Disease</title>
+<style type="text/css">
+		body{
+			background-image:url('heart.jpg');
+                	background-size:cover;
+                	background-repeat:no-repeat;
+               		background-attachement:fixed;
+		}
+		p{
+			font-size: 25px;
+			color: black;
+		}
+</style>
+
+</head>
+<body>
+<div class="content">
+<h1>Please Fill The Following Details:--->  </h1>
+<form   action = "/cgi-bin/data.cgi" method = "POST"  >
+
+	<table>
+		
+<tr><td><font size="5">Enter age</font><td><input name="age" type="number" required style="width: 180px;"></td></tr>
+<font size="5">Enter sex
+<input type="radio" name="gender" value=0 checked="checked"> Male</td></tr>
+<input type="radio" name="gender" value=1> Female</td></tr>
+<tr><td><font size="5">Enter cp</font><td><input  min="0" max="4" name="cp" type="number" required style="width: 180px;"></td></tr>
+<tr><td><font size="5">Enter trestbps</font><td><input  min="90" max="220" name="trestbps" type="number" required style="width: 180px;"></td></tr>
+<tr><td><font size="5">Enter chol</font><td><input min="100" max="600" name="chol" type="number" required style="width: 180px;"></td></tr>
+<tr><td><font size="5">Enter fbs</font><td><input min="0" max="1" name="fbs" type="number" required style="width: 180px;"></td></tr>
+<tr><td><font size="5">Enter restecg</font><td><input min="0" max="2" name="restecg" type="number" required style="width: 180px;"></td></tr>
+<tr><td><font size="5">Enter thalach</font><td><input min="60" max="210" name="thalach" type="number" required style="width: 180px;"></td></tr>
+<tr><td><font size="5">Enter exang</font><td><input min="0" max="1" name="exang" type="number" required style="width: 180px;"></td></tr>
+<tr><td><font size="5">Enter oldpeak</font><td><input min="0" max="7.0" name="oldpeak" type="number" required style="width: 180px;"></td></tr>
+<tr><td><font size="5">Enter slope</font><td><input min="0" max="2" name="slope" type="number" required style="width: 180px;"></td></tr>
+<tr><td><font size="5">Enter ca</font><td><input min="0" max="5" name="ca" type="number" required style="width: 180px;"></td></tr>
+<tr><td><font size="5">Enter thal</font><td><input min="0" max="3" name="thal" type="number" required style="width: 180px;"></td></tr>
+
+<tr><td><input type="submit" value="submit" ></td></tr>
+</table>
+</form>
+</div>
+</body>
+</html>
